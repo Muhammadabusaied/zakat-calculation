@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zakat Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.28.0/dist/full.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="container mx-auto px-4">
+    <h1 class="text-5xl">যাকাত ক্যালকুলেটর</h1>
+
+    <section>
+        <div class="form-control my-3">
+            <label class="label">
+                <span class="label-text">Enter amount</span>
+            </label>
+            <label class="input-group">
+                <span class="w-48">ক্যাশ টাকা </span>
+                <input id="cash" type="number" placeholder="ক্যাশ টাকা" class="input input-bordered" />
+                <span>টাকা</span>
+            </label>
+        </div>
+
+        <div class="form-control my-3">
+            <label class="input-group">
+                <span class="w-48">ব্যাংক একাউন্টের টাকা </span>
+                <input id="bank" type="number" placeholder="ব্যাংক একাউন্টের টাকা " class="input input-bordered" />
+                <span>টাকা</span>
+            </label>
+        </div>
+
+        <div class="form-control my-3">
+            <label class="input-group">
+                <span class="w-48">সোনা</span>
+                <input id="gold" type="number" placeholder="সোনা" class="input input-bordered" />
+                <span>টাকা</span>
+            </label>
+        </div>
+
+        <div class="form-control my-3">
+            <label class="input-group">
+                <span class="w-48">রুপা </span>
+                <input id="silver" type="number" placeholder="রুপা" class="input input-bordered" />
+                <span>টাকা</span>
+            </label>
+        </div>
+
+        <div class="form-control my-3">
+            <label class="input-group">
+                <span class="w-48">বিনিয়োগ</span>
+                <input id="invest" type="number" placeholder="বিনিয়োগ" class="input input-bordered" />
+                <span>টাকা</span>
+            </label>
+        </div>
+
+        <div class="form-control my-3">
+            <label class="input-group">
+                <span class="w-48">ব্যবসায় পণ্য</span>
+                <input id="business" type="number" placeholder="ব্যবসায় পণ্যের বিক্রয়মূল্য"
+                    class="input input-bordered" />
+                <span>টাকা</span>
+            </label>
+        </div>
+
+        <div class="form-control my-3">
+            <label class="input-group">
+                <span class="w-48">প্রাপ্য ঋণ </span>
+                <input id="acceptable" type="number" placeholder="ফেরত পাবেন এমন ঋণ" class="input input-bordered" />
+                <span>টাকা</span>
+            </label>
+        </div>
+
+        <div class="form-control my-3">
+            <label class="input-group">
+                <span class="w-48">প্রদেয় ঋণ</span>
+                <input id="debt" type="number" placeholder="এক বছরের মধ্যে পরিশোধ্য" class="input input-bordered" />
+                <span>টাকা</span>
+            </label>
+        </div>
+
+    </section>
+
+    <button id="calculate" class="btn btn-active btn-accent">হিসাব করুন</button>
+
+    <script src="app.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</body>
+
+</html>
